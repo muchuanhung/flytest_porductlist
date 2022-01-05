@@ -1,5 +1,5 @@
 <template>
-  <div class="overflow-auto">
+  <b-container class="overflow-auto">
     <!-- Use text in props -->
     <b-pagination
       v-model="currentPage"
@@ -10,9 +10,7 @@
       next-text="Next"
       last-text="Last"
     ></b-pagination>
-
-    
-  </div>
+  </b-container>
 </template>
 
 <script>
