@@ -9,6 +9,7 @@
       prev-text="Prev"
       next-text="Next"
       last-text="Last"
+      align="center"
     ></b-pagination>
   </b-container>
 </template>
