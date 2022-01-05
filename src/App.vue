@@ -8,10 +8,15 @@
   </div>
 </template>
 
+
+
+
+
+
 <script>
 //製作component元件導入
-import 'bootstrap'
-import 'bootstrap/dist/css/bootstrap.min.css'
+import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap-vue/dist/bootstrap-vue.css';
 import Navbar from "./components/Navbar.vue";
 import Footer from "./components/Footer.vue";
 
