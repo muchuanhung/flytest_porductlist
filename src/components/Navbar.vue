@@ -2,7 +2,7 @@
    
     <b-container class="product-category d-flex justify-content-between align-items-center">
          <b-card-sub-title>
-           Showing 1-6 of 30 Products
+           Showing 1-2 of 9 Products
          </b-card-sub-title>
 
          <!-- Products 分類filter-->

@@ -50,18 +50,12 @@
     </div>
     <b-button 
       block variant="primary"
-      
+      style="width:250px"
       >
       {{product.button}}
     </b-button>
   </b-card>
-  <!-- Products 產品data end-->
-
-
-
-
-  
-     
+  <!-- Products 產品data end-->     
       </b-row>
     </b-container>
 </template>
@@ -80,13 +74,13 @@ export default {
 	data() {
 		return {
 			product: this.initialproduct,
+      selectedCategory: "All"
 		}
 	},
 }
 </script>
 
-<style lang="css" scoped>
-
+<style lang="scss" scoped>
 .product-label {
   padding: 1px 10px;
   text-transform: uppercase;
@@ -106,13 +100,15 @@ export default {
   border-top: 1px solid lightgray;
 }
 
-.product-info02__product__regular-price{
+.product-info02__product{
+  &__regular-price{
   padding-right: 15px;
   color: orange;
-}
-.product-info02__product__discount-price{
+  }
+  &__discount-price{
   margin-bottom: 15px;
   color: darkgray;
+  }
 }
 
 

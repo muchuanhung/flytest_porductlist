@@ -5,7 +5,7 @@ import router from './router'
 //新增bootstrap全局設定
 import { BootstrapVue, IconsPlugin } from 'bootstrap-vue';
 //新增sass全局設定
-
+import './assets/stylesheets/scss/main.scss';
 
 //新增字型樣式
 import '@fortawesome/fontawesome-free/css/all.css'
