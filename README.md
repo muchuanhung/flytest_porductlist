@@ -2,8 +2,6 @@
 
 #### This is a single page website built by Bootstrap.Vue and SASS.
 
-#### ☞ ☞ Take a look at this [flytest_productlist](https://muchuanhung.github.io/flytest_porductlist/). 👀
-
 ## ⭐ Features
 
 - Products dispaly by catagories
