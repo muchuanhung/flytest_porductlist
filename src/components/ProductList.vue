@@ -5,17 +5,20 @@
       
 
   <!-- Products 產品data-->
-  <b-card
-    :img-src="product.productImg"
-    img-alt="Image"
-    img-top
-    tag="article"
-    style="max-width: 20rem;"
-    class="product-wrapper mb-2"
-  >
-    <b-card-sub-title class="product-label">
-      {{product.label}}
-    </b-card-sub-title> 
+    <b-card
+      :img-src="product.productImg"
+      img-alt="Image"
+      img-top
+      tag="article"
+      style="max-width: 20rem;"
+      class="product-wrapper mb-2"
+    >
+      <b-card-title 
+        class="product-label"
+        style="font-size:18px;"
+      >
+        {{product.label}}
+      </b-card-title> 
 
     <div class="product-info01">
       <b-card-title
@@ -91,7 +94,6 @@ export default {
   border-radius: 3px;
   background: #ff5b6f;
   color: white;
- 
 }
 
 .product-info01{
