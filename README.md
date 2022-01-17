@@ -41,3 +41,5 @@ npm run serve
 ```
 
 - Open the browser and navigate to http://localhost:8080
+
+![Product Web Screenshot]("https://i.ibb.co/2WXGjFK/Localhost-Full-Generic-Laptop-2022-17-1-at-5-35-18-PM.jpg")

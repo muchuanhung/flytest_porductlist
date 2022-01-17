@@ -1,7 +1,8 @@
 <template>
-   <b-container>
+   <b-container id="product">
+     
     <!-- Products 產品分類--> 
-    <Navbar />
+    <Navbar/>
     
     <!-- Products 全部產品-->   
     <div class="all__products-card" >
@@ -9,6 +10,7 @@
       v-for="product in displayProducts"
       :key="product.id"
       :initialproduct="product"
+      
     />
     </div>
 
@@ -28,6 +30,7 @@
 </template>
 
 <script>
+import Navbar from '../components/Navbar.vue';
 import ProductList from "../components/ProductList.vue";
 
 
@@ -146,12 +149,14 @@ const dummyData = {
 			"https://i.pinimg.com/564x/5d/d2/ac/5dd2ac14dac59ab899654ce431b3d4c4.jpg",
 	},                 
 ],
-  selectedCategory: "Popular"
+  selectCategory: "All"
 };
+
 export default {
   name: 'products',
   components: {
     ProductList,
+    Navbar,
   },
   //觸發fetchProductsData函式
   created() {
@@ -165,7 +170,6 @@ export default {
       rows: [],
       perPage: 6,
       currentPage: 1,
-      selectedCategory: [],
     }
   },
    methods: {
@@ -183,10 +187,12 @@ export default {
       //給每一頁顯示6個產品為一個循環
       const start = (currentPage -1) * this.perPage;
       this.displayProducts = this.Products.slice(start, start+6);
-    }
+    },
   },
 };  
 </script>
+
+
 
 <style lang="scss" scoped>
 .all__products-card {

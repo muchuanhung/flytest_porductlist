@@ -77,7 +77,6 @@ export default {
 	data() {
 		return {
 			product: this.initialproduct,
-      selectedCategory: "All"
 		}
 	},
 }
